@@ -317,6 +317,10 @@ li {
     width: 100%;
 }
 
+.modal_list .best_bg {
+    padding: 20px;
+}
+
 .modal_list li {
     max-width: 400%;
     width: 100%;
