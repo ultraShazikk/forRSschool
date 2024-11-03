@@ -263,6 +263,10 @@ li {
         display: flex;
         flex-direction: column;
     }
+
+    .hero_modal .best_item{
+        position: relative;
+    }
 }
 
 @media (max-width: 475px) {
@@ -308,13 +312,18 @@ li {
     z-index: 10;
 }
 
-.hero_modal li{
+.modal_list {
     max-width: 400px;
     width: 100%;
-    position: relative;
 }
 
-.hero_modal li img {
+.modal_list li {
+    max-width: 400%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero_modal .best_item .work_img {
     max-width: 360px;
     width: 100%;
 }
