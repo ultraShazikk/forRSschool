@@ -685,6 +685,10 @@ li {
     gap: 28px;
 }
 
+.footer_flex img {
+    cursor: pointer;
+}
+
 .footer_p {
     font-family: 'Montserrat';
     font-size: 16px;

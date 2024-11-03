@@ -39,3 +39,38 @@ function updateTime() {
   
   setInterval(updateTime, 1000);
 
+  const all = document.querySelector(".all");
+  const forWork = document.querySelector(".for_work");
+  const forHealth = document.querySelector(".for_health");
+  const forHarmony = document.querySelector(".for_harmony");
+  
+  const work = document.querySelectorAll(".work");
+  const health = document.querySelectorAll(".health");
+  const harmony = document.querySelectorAll(".harmony");
+  
+  forWork.addEventListener("click", (e) => {
+    e.preventDefault()
+    health.forEach(item => item.classList.add("d_none"));
+    harmony.forEach(item => item.classList.add("d_none"));
+  });
+  
+  forHealth.addEventListener("click", (e) => {
+    e.preventDefault()
+    work.forEach(item => item.classList.add("d_none"));
+    harmony.forEach(item => item.classList.add("d_none"));
+    health.forEach(item => item.classList.remove("d_none"));
+  });
+  
+  forHarmony.addEventListener("click", (e) => {
+    e.preventDefault()
+    work.forEach(item => item.classList.add("d_none"));
+    health.forEach(item => item.classList.add("d_none"));
+    harmony.forEach(item => item.classList.remove("d_none"));
+  });
+
+  all.addEventListener("click", (e) => {
+    e.preventDefault()
+    work.forEach(item => item.classList.remove("d_none"));
+    health.forEach(item => item.classList.remove("d_none"));
+    harmony.forEach(item => item.classList.remove("d_none"));
+  })
